@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+    <title>Heroes SPA</title>
+</head>
+<body>
+    <div class="flex flex-col">
+        <div class="flex justify-center gap-3 py-3" id="search-container">
+          <input
+            class="rounded-lg px-3 py-3"
+            type="search"
+            id="search-input"
+            placeholder="Busca tu super heroe por el nombre"
+          />
+          <button class="bg-rojo border border-rojo py-3 px-3 rounded-lg font-bold text-white hover:bg-white hover:text-rojo" id="search">Buscar</button>
+        </div>
+        <div class="flex justify-center gap-3 bg-rojo" id="buttons">
+           <button class="button-value boton" onclick="filterHeroe('Todos')">Todos</button>
+           <button class="button-value boton" onclick="filterHeroe('DC')">DC</button>
+           <button class="button-value boton" onclick="filterHeroe('Marvel')">Marvel</button>
+        </div>
+        <div id="heroes" class="flex flex-wrap justify-center gap-5 items-center p-4"></div>
+
+        <div id="myModal" class="contenedor-modal">
+            <div class="contenido-modal">
+              <span class="close">X</span>
+              <div id="cuerpo-modal">
+
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

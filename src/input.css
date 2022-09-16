@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #2b2d42;
+}
+
+.active{
+    border: 1px solid #d90429;
+    background-color: white;
+    color: #d90429;
+}
+
+.hide{
+    display: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .contenedor-modal{
+        @apply
+        fixed z-10 py-10
+         w-full h-full overflow-auto bg-black/50
+    }
+    .contenido-modal{
+        @apply
+        bg-[#282b29] m-auto p-6 w-1/2 text-white
+    }
+    .casa{
+        @apply
+        bg-rojo rounded-md py-2 px-2 font-bold
+    }
+    .close{
+        @apply
+        text-red-600
+        float-right text-base font-bold
+        cursor-pointer
+    }
+    .boton{
+        @apply
+        border
+        rounded-lg
+        px-3 py-3 font-bold text-lg
+    }
+    .carta{
+        @apply
+         text-white w-72 min-h-[10rem]
+        rounded-md overflow-hidden bg-black
+    }
+    .image-container{
+        @apply
+        w-full h-full object-cover bg-[#8d99ae]
+    }
+    .contenedor{
+        @apply
+        p-3
+    }
+    .heroe-name{
+        @apply
+        font-extrabold text-[#ffff3f]
+    }
+    .aparicion{
+        @apply
+        flex gap-2
+    }
+    .quote{
+        @apply
+        font-semibold text-[#ffff3f]/90
+    }
+}

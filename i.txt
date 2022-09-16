@@ -1,0 +1,16 @@
+Carta
+    |
+flip-inner
+    |
+    |
+[
+flip-card-front[
+    |
+imgCarta
+    |
+container
+]
+flip-card-back[
+
+]
+]
